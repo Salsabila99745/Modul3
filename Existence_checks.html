@@ -1,0 +1,34 @@
+<!--
+    3411191119_SALSABILA FAJRIATI ROMLI_DSE-C
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Existence Checks</title>
+</head>
+<body>
+    <form name="myForm" action="" onsubmit="return validateForm()" method="POST">
+    <tabel>
+        <tr>
+            <td>Input Username</td>
+            <td><input type="text" id="username" name="username"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </tabel>
+    </form>
+    <script type="text/javascript">
+        function validateForm(){
+            var user = document.myForm.username.value;
+            if(user == ""){
+                alert("Username tidak boleh kosong");
+                return false;
+            }else{
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
